@@ -13,7 +13,10 @@ func Hello(name string) (string, error) {
 		return "", errors.New("empty name")
 	}
 	//Create a message using a random format.
+
 	message := fmt.Sprintf(randomFormat(), name)
+	// //this below code is example of Failure case testing
+	// message := fmt.Sprint(randomFormat())
 	return message, nil
 }
 
